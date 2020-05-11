@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="area-padding">
+<div class="container">
+ <h1 class="text-center logo my-4">
+     Sign Up
+     <!-- <a href="{% url 'index' %}">MICONTS</a> -->
+    </h1>
+    <div class="row justify-content-center">
+	<div class="col-lg-4 col-md-3 col-sm-2"></div>
+      <div class="col-lg-4 col-md-6 col-sm-8">
+        <div class="card">
+          <div class="card-body">
+            <!--<h3 class="card-title text-center">Sign up</h3> -->
+            <form method="post" novalidate>
+              {% csrf_token %}
+              {% include 'includes/form.html' %}
+              <button type="submit" class="btn btn-primary btn-block">Create an account</button>
+            </form>
+          </div>
+          <div class="card-footer text-muted text-center">
+            Already have an account? <a href="{% url 'login' %}">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- <div class="row text-center">
+  <h2>Sign up</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary" >Sign up</button>
+  </form>
+<a href="{% url 'login' %}" class="btn btn-success">Login</a>
+</div> -->
+</div> 
+</div>
+{% endblock %}
