@@ -27,6 +27,10 @@ def dashboard(request):
     return render(request, 'dashboard.html')
 
 
+def widget(request):
+    return render(request, 'form-elements-component.html')
+
+
 def population_chart(request):
     labels = []
     data = []
