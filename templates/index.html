@@ -153,17 +153,60 @@
                                                     <a href="{% url 'dashboard' %}" class="btn-primary">ENTER DASHBOARD</a>
 
                                                     </div>
-                                                    <!--<div class="card-block">
-                                                        <p>
-                                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                            sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                                        </p>
-                                                    </div> -->
+                                                    <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+                                                    <div class="card-block">
+                                                        <div id="demo" class="carousel slide" data-ride="carousel">
+                                                            <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/860x394.jpg' %}" alt="Los Angeles" width="900" height="400">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/abstract-future-concept-futuristic-blue-vector-14944728.jpg' %}" alt="Chicago" width="900" height="400">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/3T6LCSAGJFAJ5ISIYQZSMIWBC4.jpg' %}" alt="New York" width="900" height="400">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+      <div class="carousel-item">
+      <img src="{% static 'images/analytics_business_chart_charts_data_data_analysis_desk_device-1554545.jpg!d.jpeg' %}" alt="New York" width="900" height="400">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+                                                    </div>
+                                                    </div>
                                                 <!--</div> -->
 
                                                 {% endblock %}
