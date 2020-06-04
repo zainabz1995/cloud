@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content="Gradient Able Bootstrap admin template made using Bootstrap 4. The starter version of Gradient Able is completely free for personal project." />
     <meta name="keywords" content="flat ui, admin , Flat ui, Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
-    <meta name="author" content="ZAINAB ZAHEER" >
+    <meta name="author" content="codedthemes">
     <!-- Favicon icon -->
     <link rel="icon" href="{% static 'images/favicon1.ico' %}" type="image/x-icon">
     <!-- Google font--><link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
@@ -40,9 +40,9 @@
             <nav class="navbar header-navbar pcoded-header">
                <div class="navbar-wrapper">
                    <div class="navbar-logo">
-                       <!-- <a class="mobile-menu" id="mobile-collapse" href="#">
+                       <a class="mobile-menu" id="mobile-collapse" href="#">
                            <i class="ti-menu"></i>
-                       </a> -->
+                       </a>
                        <div class="mobile-search">
                            <div class="header-search">
                                <div class="main-search morphsearch-search">
@@ -64,10 +64,10 @@
 
                    <div class="navbar-container container-fluid">
                        <ul class="nav-left">
-                           <!--<li>
+                           <li>
                                <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
-                           </li> -->
-                           <!--<li class="header-search">
+                           </li>
+                           <li class="header-search">
                                <div class="main-search morphsearch-search">
                                    <div class="input-group">
                                        <span class="input-group-addon search-close"><i class="ti-close"></i></span>
@@ -77,12 +77,12 @@
                                        <span class="input-group-addon search-btn"><i class="ti-search"></i></span>
                                    </div>
                                </div>
-                           </li> -->
-                           <!--<li>
+                           </li>
+                           <li>
                                <a href="#" onclick="toggleFullScreen()">
                                    <i class="ti-fullscreen"></i>
                                </a>
-                           </li> -->
+                           </li>
                        </ul>
                        <ul class="nav-right">
                            <li class="header-notification">
@@ -134,6 +134,7 @@
 
                                     <div class="page-body">
                                         <div class="row">
+                                            <div class="col-sm-12">
                                                 {% block content %}
                                                 <!--<div class="card"> -->
                                                     <div class="card-header">
@@ -149,7 +150,7 @@
 															</ul>
 														</div> -->
 
-                                                    <a href="{% url 'dashboard' %}" class="btn-primary">FREE EVALUATION</a>
+                                                    <a href="{% url 'dashboard' %}" class="btn-primary">ENTER DASHBOARD</a>
 
                                                     </div>
                                                     <style>
@@ -217,7 +218,6 @@
                                                 <!--</div> -->
 
                                                 {% endblock %}
-                                        <div class="col-sm-12">
                                             </div>
                                         </div>
                                     </div>

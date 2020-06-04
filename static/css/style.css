@@ -8348,9 +8348,15 @@ table tbody .border-bottom-info td {
   background: linear-gradient(to right, #1d9c83, #59e0c5); }
   .pcoded .pcoded-header[header-theme="theme4"] a {
     color: #fff; }
+  /*
 .pcoded .pcoded-header[header-theme="theme5"] {
   background: -webkit-gradient(linear, left top, right top, from(#0071f3), to(#73b4ff));
   background: linear-gradient(to right, #0071f3, #73b4ff); }
+*/
+.pcoded .pcoded-header[header-theme="theme5"] {
+  background: -webkit-gradient(linear, left top, right top, from(#73b4ff), to(#73b4ff));
+  background: linear-gradient(to right, #73b4ff, #73b4ff); }
+
   .pcoded .pcoded-header[header-theme="theme5"] a {
     color: #fff; }
 .pcoded .pcoded-header[header-theme="theme6"] {
