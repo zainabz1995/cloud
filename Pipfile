@@ -17,7 +17,7 @@ whitenoise = "==5.0.1"
 django-widget-tweaks = "==1.4.8"
 six = "==1.14.0"
 Django = "~=3.0.6"
-Pillow = "==7.1.2"
+Pillow = "==8.3.2"
 
 [requires]
 python_version = "3.6"
